@@ -13,5 +13,10 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "browserstack-node-sdk": "^1.34.46"
+  },
+  "scripts": {
+    "local-test": "node src/main.js",
+    "browserstack-platform-test": "browserstack-node-sdk node src/main.js",
+    "after-install": "npm update browserstack-node-sdk"
   }
 }
